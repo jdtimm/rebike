@@ -1,4 +1,4 @@
-@import "../../styles/custom-media.css";
+@import '../../styles/custom-media.css';
 
 .root {
   position: relative;
@@ -36,7 +36,6 @@
   position: relative;
   margin: 0 1.5rem;
   max-width: var(--width-medium);
-
 
   @nest & figcaption {
     width: 100%;

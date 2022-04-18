@@ -1,4 +1,4 @@
-@import "../../styles/custom-media.css";
+@import '../../styles/custom-media.css';
 
 .root {
   padding: 2rem 0;
@@ -35,7 +35,7 @@
 
 .form {
   display: grid;
-  accent-color: #F1B500;
+  accent-color: #f1b500;
 
   @media (--media-min-medium) {
     min-width: 34rem;
@@ -64,7 +64,7 @@
 .form button {
   -webkit-font-smoothing: inherit;
   font: inherit;
-  background-color: #F1B500;
+  background-color: #f1b500;
   margin-top: 1rem;
   display: block;
   padding: 1em;

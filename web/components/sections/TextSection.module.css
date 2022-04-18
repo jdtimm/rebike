@@ -1,11 +1,10 @@
 @import '../../styles/custom-media.css';
 
 .root {
-  background-color: #E9EAEC;
+  background-color: #e9eaec;
   padding: 2rem 0;
   display: flex;
   justify-content: flex-end;
-  
 
   @media (--media-min-medium) {
     padding: 4rem 0;
@@ -14,7 +13,7 @@
 
 .article {
   color: #fff;
-  background-color: #1A1B34;
+  background-color: #1a1b34;
   width: 100%;
   /* max-width: var(--width-small); */
   margin-left: 2%;
