@@ -15,6 +15,7 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-top: 1em;
+  visibility: hidden;
 }
 
 .label + .title {
@@ -35,6 +36,7 @@
   position: relative;
   margin: 0 1.5rem;
   max-width: var(--width-medium);
+
 
   @nest & figcaption {
     width: 100%;
@@ -63,8 +65,14 @@
 }
 
 .captionBox {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-black);
+  /* background-color: var(--color-white); */
+  /* border: 1px solid var(--color-black); */
+  background-color: hsla(220, 7%, 92%, 35%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px hsla(0, 100%, 0%, 37%);
   padding: 1.5rem;
 
   @media (--media-min-medium) {

@@ -1,17 +1,23 @@
 @import '../../styles/custom-media.css';
 
 .root {
-  top: 1px;
   composes: center from '../../styles/shared.module.css';
   position: relative;
+  height: 250px;
   background-color: var(--color-black, #000);
   color: var(--color-white, #fff);
-  background-size: cover;
+  background-size: auto, cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 2rem;
   padding-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
 
   @media (--media-min-medium) {
+    padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
@@ -33,50 +39,64 @@
   padding: 0 1.5em;
   box-sizing: border-box;
   z-index: 1;
-  outline: 1px solid red;
 } */
 
 .content {
-  width: 100%;
+  width: 70%;
   padding: 0.7rem 0.7rem;
+  margin-left: 2%;
   box-sizing: border-box;
   z-index: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 30vh;
+  max-width: 470px;
+  min-width: 250px;
+  background-color: hsla(220, 7%, 92%, 0.5%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid hsla(0, 100%, 100%, 0.3%);
+  box-shadow: 0px 10px 10px hsla(0, 0%, 0%, 37%);
+}
+
+@media only screen and (max-width: 675px) {
+  .content {
+    max-width: 270px;
+  }
 }
 
 .title {
   position: relative;
+  color: #1a1b34;
   font-weight: 600;
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1.5px 1.5px 3px hsla(0, 100%, 100%, 30%);
   margin: 0;
   padding: 0;
 
   @media (--media-min-medium) {
     /* font-size: var(--font-title1-size); */
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: var(--font-title1-line-height);
     /* padding-top: 15rem; */
-    padding-top: 2.7rem;
   }
 }
 
 .tagline {
+  color: #1a1b34;
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 0.5em;
-  margin-bottom: 1rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1.5px 1.5px 3px hsla(0, 100%, 100%, 30%);
 
   @media (--media-min-medium) {
     /* font-size: var(--font-large-size); */
     font-size: 2.1rem;
     line-height: var(--font-large-line-height);
-    padding-top: 5.7rem;
+    padding-top: 1rem;
+    /* padding-top: 5.7rem; */
   }
 }
 

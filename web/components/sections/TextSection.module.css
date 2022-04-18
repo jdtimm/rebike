@@ -1,7 +1,11 @@
-@import "../../styles/custom-media.css";
+@import '../../styles/custom-media.css';
 
 .root {
+  background-color: #E9EAEC;
   padding: 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+  
 
   @media (--media-min-medium) {
     padding: 4rem 0;
@@ -9,19 +13,23 @@
 }
 
 .article {
+  color: #fff;
+  background-color: #1A1B34;
   width: 100%;
-  max-width: var(--width-small);
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  /* max-width: var(--width-small); */
+  margin-left: 2%;
+  padding: 1.5rem 1.5rem;
   box-sizing: border-box;
+  border-radius: 10px 0 0 10px;
 }
 
 .label {
-  font-size: var(--font-micro-size);
+  /* font-size: var(--font-micro-size);
   line-height: var(--font-micro-line-height);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-top: 1em;
+  margin-top: 1em; */
+  visibility: hidden;
 }
 
 .heading {
