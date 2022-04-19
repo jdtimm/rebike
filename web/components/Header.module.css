@@ -13,7 +13,6 @@
   color: var(--color-black, #000);
   display: flex;
   width: 100%;
-  outline: 2px solid red;
 }
 
 @media only screen and (max-width: 775px) {
@@ -36,7 +35,7 @@
   font-weight: inherit;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  padding-left: 15%;
 
   @nest & > a {
     display: block;
@@ -70,6 +69,7 @@
 .nav {
   @media (--media-min-medium) {
     flex: 1;
+    padding-right: 15%;
   }
 }
 
