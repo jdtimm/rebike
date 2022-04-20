@@ -9,6 +9,14 @@
   }
 }
 
+.left .caption {
+  justify-content: flex-start;
+}
+
+.right .caption {
+  justify-content: flex-end;
+}
+
 .label {
   font-size: var(--font-micro-size);
   line-height: var(--font-micro-line-height);
@@ -61,6 +69,7 @@
   @media (--media-min-medium) {
     max-width: calc(var(--width-small) - 3rem);
   }
+  display: flex;
 }
 
 .captionBox {
