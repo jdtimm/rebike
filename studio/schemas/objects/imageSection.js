@@ -28,7 +28,19 @@ export default {
       type: 'string',
       title: 'Layout',
       initialValue: 'left',
-      options: { list: ['left', 'right'] }
+      options: {
+        list: [
+          'left',
+          'right',
+          'center',
+          'top-left',
+          'top-right',
+          'top-center',
+          'bottom-left',
+          'bottom-right',
+          'bottom-center'
+        ]
+      }
     },
     {
       name: 'cta',
