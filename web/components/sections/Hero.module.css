@@ -79,11 +79,12 @@
 
 .title {
   position: relative;
-  color: #1a1b34;
+  /* color: #1a1b34; */
+  color: #fff;
   font-weight: 600;
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
-  text-shadow: 1.5px 1.5px 3px hsla(0, 100%, 100%, 30%);
+  text-shadow: 1.5px 1.5px 3px hsla(0, 100%, 0%, 30%);
   margin: 0;
   padding: 0;
 
@@ -96,11 +97,12 @@
 }
 
 .tagline {
-  color: #1a1b34;
+  /* color: #1a1b34; */
+  color: #fff;
   position: relative;
   margin: 0;
   padding: 0;
-  text-shadow: 1.5px 1.5px 3px hsla(0, 100%, 100%, 30%);
+  text-shadow: 1.5px 1.5px 3px hsla(0, 100%, 0%, 30%);
 
   @media (--media-min-medium) {
     /* font-size: var(--font-large-size); */
