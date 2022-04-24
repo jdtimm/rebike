@@ -11,10 +11,48 @@
 
 .left .caption {
   justify-content: flex-start;
+  align-items: center;
 }
 
 .right .caption {
   justify-content: flex-end;
+  align-items: center;
+}
+
+.center .caption {
+  justify-content: center;
+  align-items: center;
+}
+
+.top-left .caption {
+  justify-content: flex-start;
+  align-items: top;
+}
+
+.top-right .caption {
+  justify-content: flex-end;
+  align-items: top;
+}
+
+.top-center .caption {
+  justify-content: center;
+  align-items: top;
+}
+
+.bottom-left .caption {
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.bottom-right .caption {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bottom-center .caption {
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .label {
@@ -33,11 +71,13 @@
 .title {
   font-size: var(--font-title3-size);
   line-height: var(--font-title3-line-height);
+  color: #fff;
 }
 
 .image {
   display: block;
-  width: 100%;
+  width: 96%;
+  margin: 0 auto;
 }
 
 .content {
@@ -65,9 +105,10 @@
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  color: #fff;
 
   @media (--media-min-medium) {
-    max-width: calc(var(--width-small) - 3rem);
+    /* max-width: calc(var(--width-small) - 3rem); */
   }
   display: flex;
 }
@@ -75,15 +116,48 @@
 .captionBox {
   /* background-color: var(--color-white); */
   /* border: 1px solid var(--color-black); */
-  background-color: hsla(220, 7%, 92%, 35%);
+  /* background-color: hsla(220, 7%, 92%, 35%);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid transparent;
   border-radius: 10px;
-  box-shadow: 0 10px 10px hsla(0, 100%, 0%, 37%);
-  padding: 1.5rem;
+  box-shadow: 0 10px 10px hsla(0, 100%, 0%, 37%); */
+  background-color: #59656F;
+  padding: 3rem;
+  border-radius: 6px;
 
   @media (--media-min-medium) {
     max-width: calc((var(--width-small) / 2) - 3rem);
   }
 }
+/* .top-right .captionBox {
+  border-bottom: 1px solid #1A1B34;
+} */
+ 
+.top-right .captionBox {
+  box-shadow: -3px 3px 5px #1A1B34;
+}
+
+.top-left .captionBox {
+  box-shadow: 3px 3px 5px #1A1B34;
+}
+
+/*.top-right .captionBox {
+  border-bottom: 1.5px solid #1A1B34;
+  margin: 0;
+  border-left: 1.5px solid #1A1B34;
+}*/
+
+/* .top-right .caption::before {
+  content: '';
+  border-top: 50px solid #E9EAEC;
+  border-bottom: 20px solid #E9EAEC;
+  border-left: 1px solid #1A1B34;
+  width: 0;
+ }
+
+.top-right .caption::after {
+  content: '';
+  border-right: 100px solid #E9EAEC;
+  border-bottom: 1.5px solid #1A1B34;
+}  */
