@@ -13,13 +13,32 @@
 
 .article {
   color: #fff;
-  background-color: #1a1b34;
+  background-color: #59656f;
   width: 100%;
   /* max-width: var(--width-small); */
   margin-left: 2%;
   padding: 1.5rem 1.5rem;
   box-sizing: border-box;
   border-radius: 10px 0 0 10px;
+}
+
+@media only screen and (max-width: 675px) {
+  .article {
+    border-radius: 25px 25px 0 0;
+    padding:  0;
+    margin: 0;
+    text-align: center;
+  }
+  .article::after {
+    content: '';
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    height: 20px;
+    background-color: #e9eaec;
+    border-top: 20px solid #e9eaec;
+    border-radius: 25px 25px 0 0;
+  }
 }
 
 .label {
