@@ -34,7 +34,8 @@
     display: block;
     width: 100%;
     margin-top: 2rem;
-    height: 20px;
+    margin-bottom: -1px;
+    height: 50px;
     background-color: #e9eaec;
     border-top: 20px solid #e9eaec;
     border-radius: 25px 25px 0 0;
